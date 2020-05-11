@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+  display: block;
+}
+
+header {
+    background: #A1C6D7;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+img {
+  height: 40px;
+  width: 50px
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo {
+  max-width: 30vw;
+  float: left;
+}
+
+a:hover {
+  color: purple;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 5;
+  line-height: 0.8;
+ }
+
+.video, #email-details {
+  max-width: 500px;
+  margin: 5px auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#submit, #selected1, #selected2, #selected3 {
+  color: #F7FFF7;
+  background: #2F3061;
+  padding: 6px 20px;
+  border-radius: 4px;
+  margin: 6px;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+}
+
+#pricing ul, li {
+  list-style: none;
+  padding: 2px;
+}
+
+.product > #level {
+    background-color: #ddd;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+footer {
+	background: #ddd;
+	color: #F7FFF7;
+  padding: 10px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > span {
+  display: flex;
+  justify-content: flex-end;
+  color: #444;
+  font-size: 0.9em;
+}
+
+nav > ul {
+  max-width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+@media(min-width:1014px) {
+#pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.product {
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  
+ }
+}
+
+@media (max-width: 1015px) {
+#pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+ }
+
+ .product {
+  border: 1px solid #000;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+  }
+
+h2 {
+    line-height: 1;
+  }
+
+
+.video {
+  max-width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+ }
+}
